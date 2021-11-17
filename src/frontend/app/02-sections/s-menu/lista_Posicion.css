@@ -1,0 +1,73 @@
+/* Efecto con javascript*/
+    .content-list li.element_list--efect{
+        background-color: var(--color_primery);
+        color: var(--color_white);
+        font-weight: normal;
+    }
+/*------------------------------------------*/
+.nav-movil__lista{
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    background-color: var(--color3);
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    font-weight: bold;
+    transition: all 0.35s ease-in-out;
+}
+
+.nav-movil__lista.desplegar{
+    left: 0px;
+}
+
+li{
+    text-align: center;
+    padding: 20px 0px;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.nav-movil__lista .content-list .list_item:hover ,.list_item--efect{
+    background-color: var(--color_primery);
+    color: var(--color_white);
+    font-weight: normal;
+}
+
+.content-list .list_item--efect:hover{
+    background-color: var(--color_primeryy) !important;
+}
+
+@media (min-width: 700px){
+    .list_item--efect{
+        margin-left: 15px;
+    }
+
+    .nav-movil__lista{
+        height:100%;
+        background-color: var(--color_white);
+        position:sticky ;
+        max-width: 555px;
+        top: 0px;
+    }
+
+    .content-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .content-list li{
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: var(--color3);
+        border-radius: 5px;
+    }
+
+    .content-list .list_item--efect{
+        background-color: var(--color_primery);
+        color: var(--color_white);
+        font-weight: normal;
+    }
+}

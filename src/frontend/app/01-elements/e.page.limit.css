@@ -1,0 +1,11 @@
+.max-limt{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+
+.f_center{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}

@@ -1,0 +1,65 @@
+.nav-movil__menu{
+    display:block;
+}
+
+.content-line{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius:15px;
+    background-color: var(--color_primery)
+}
+
+.content-line__background{
+    width: 28px;
+}
+.content-line__background .content-item{
+    width: 28px;
+    height: 2.5px;
+    margin: 4px 0px;
+    background-color: var(--color_white);
+}
+
+.max-limt .nav-movil__logo{
+    cursor: pointer;
+    margin: 0px;
+}
+/*Efecto rotar los 3 botoncitos del div*/
+
+    #rotate.dis-block{
+        display: block;
+    }
+
+
+    .efect-rotate{
+        position: relative;
+    }
+    
+    .efect-rotate div{
+        position: absolute;
+        top: 19px;
+        margin: 0px;
+        left: 11.5px;
+        transition: all  0.4s ease-in-out;
+    }
+    
+    .efect-rotate div:nth-child(2){
+        display: none;
+    }
+    
+    .efect-rotate div:first-child{
+        transform:rotate(45deg)
+    }
+    
+    .efect-rotate div:last-child{
+        transform:rotate(-45deg)
+    }
+
+@media (min-width: 700px){
+    .nav-movil__menu{
+        display: none;
+    }
+}

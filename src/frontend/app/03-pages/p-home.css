@@ -1,0 +1,14 @@
+@import "../0-toolbox/general.css";
+@import "../01-elements/e.page.limit.css";
+
+/* Carpeta Menu*/
+@import "../02-sections/s-menu/menu.css";
+@import "../02-sections/s-menu/menu_movile.css";
+@import "../02-sections/s-menu/lista_Posicion.css";
+
+/* Carpeta Header*/
+@import "../02-sections/s-header/man.css";
+
+/* Carpeta WhastApp*/
+@import "../02-sections/s-whastapp/whastapp.css";
+
