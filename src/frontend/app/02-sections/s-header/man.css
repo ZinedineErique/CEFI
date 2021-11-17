@@ -21,6 +21,7 @@
 }
 
 .header_container--item h1{
+    letter-spacing: 2px;
     font-size: 54px;
     color: white;
     margin-top: 25px;
@@ -40,7 +41,7 @@
     color: var(--color_primeryy);
 }
 
-.header_container--item button{
+/* .header_container--item button{
     margin-top: 19px;
     padding: 20px;
     margin-bottom: 10px;
@@ -50,7 +51,20 @@
     transition: all 0.35s ease-in-out;
     cursor: pointer;
     border-radius: 10px;
+} */
+
+.header_container--item button {
+    width: 235px;
+    margin-top: 19px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: var(--color_white);
+    background-color: var(--color4);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
 }
+
 
 .header_container--item button:hover{
     background-color: var(--color_primeryy);
