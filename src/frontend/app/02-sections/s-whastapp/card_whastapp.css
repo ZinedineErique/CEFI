@@ -1,0 +1,103 @@
+
+.container_whastapp--item:nth-child(1){
+    opacity: 0;
+    background-color: rgb(182, 160, 160);
+    background-image: url("../../../assets/icons/backgroundwhatsapp.png");
+    width: 350px;
+    height:275px;
+    margin-bottom: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s ease-in-out;
+}
+
+/* EVENTO CERRRAR JAVASCRIPT*/
+.abrir_whastapp{
+    display: flex !important;
+} 
+
+.d-aparecer{
+    opacity: 1 !important;
+}
+
+.d-desaparecer{
+    opacity: 0 !important;
+}
+
+
+
+
+/*////////////////////////////////*/
+
+.whastapp_menj{
+    background-color: var(--color3);
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.whastapp_menj div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whastapp_menj--content{
+    display: block;
+    margin-left: 10px;
+}
+
+.whastapp_menj--cerrar{
+    margin: 0px;
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.whastapp_menj--cerrar img{
+    width: 100%;
+    height: 100%;
+}
+
+.whastapp_menj--logo{
+    margin: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius:100%;
+    overflow: hidden;
+    border: 8px solid var(--color_white);
+}
+
+.whastapp_menj--logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* IMPUT*/
+
+.whastapp_menj--button{
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+.whastapp_menj--button img{
+    width: 100%;
+    height: 100%;
+}
+
+.whastapp_menj--input{
+    width: 80%;
+    height: 100%;
+    padding: 0px 15px;
+}
+
+.whastapp_menj--input input{
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+    border-radius: 10px;
+}

@@ -11,4 +11,5 @@
 
 /* Carpeta WhastApp*/
 @import "../02-sections/s-whastapp/whastapp.css";
-
+@import "../02-sections/s-whastapp/card_whastapp.css";
+@import "../02-sections/s-whastapp/input.css"

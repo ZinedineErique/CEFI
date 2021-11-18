@@ -8,15 +8,14 @@
 .container_whastapp{
     display: block;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 23px;
+    right: 58px;
 }
 
 .container_whastapp--item:nth-child(2){
-    /* background-color: rgb(206, 186, 186); */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .container_whastapp--item .content_figure{
@@ -48,7 +47,7 @@
     border-left: 10px solid var(--color_white);
     border-bottom: 10px solid transparent;
     position: absolute;
-    top: 29%;
+    bottom: 13px;
     right: 43px;
 }
 }

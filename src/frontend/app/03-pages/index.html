@@ -47,8 +47,29 @@
         </section>
     </header>
     <section class="container_whastapp">
-        <div class='container_whastapp--item'>
-
+        <div id="container_chat" class='container_whastapp--item'>
+            <div class="whastapp_menj">
+                <div>
+                    <figure class='whastapp_menj--logo'>
+                        <img src="../../assets/icons/logocefi.png" alt="Logo">
+                    </figure>
+                    <div class='whastapp_menj--content'>
+                        <h4 class='content_W-item--title'>CEFI</h4>
+                        <p class='content_W-item--parrafo'>En línea</p>
+                    </div>
+                </div>
+                <figure class='whastapp_menj--cerrar'>
+                    <img src="../../assets/icons/cerrar.png" alt="Cerrar">
+                </figure>
+            </div>
+            <form id='formulario' class="whastapp_menj">
+                <label class='whastapp_menj--input' for="">
+                    <input type="text" name='text_m' placeholder='Enviar un Mensaje' autocomplete="off">
+                </label>
+                <button type="submit" class='whastapp_menj--button'>
+                    <img src="../../assets/icons/telegram-plane-brands.svg" alt="boton de enviar">
+                </button>
+            </form>
         </div>
         <div class='container_whastapp--item'>
             <label class='content_parrafo' for="">
@@ -60,5 +81,6 @@
         </div>
     </section>
     <script src='../04-component/menu.js'></script>
+    <script src='../04-component/enviar.js'></script>
 </body>
 </html>
