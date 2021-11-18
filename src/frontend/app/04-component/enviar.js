@@ -2,6 +2,7 @@
 
 const f = document.getElementById("formulario");
 const btnSend = document.querySelector(".whastapp_menj--button");
+let disparador =0;
 
 btnSend.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -21,25 +22,26 @@ const container_chat = document.querySelector('#container_chat');
 const cont = document.querySelector('.container_whastapp--item');
 
 cerrar.addEventListener("click",(e)=>{
-    // console.log('gaaaaaaaaaaaaaaaaaa');
-    // container_chat.classList.toggle('cerrar_whastapp')
-    condicion_cerrar();
+    disparador++
+    disparador === 2 ? cerrar_ventana(): condicion_cerrar();;
 })
 
 content_figure.addEventListener('click',(e)=>{
-    condicion_cerrar();
-    // console.log('gaaaaa 2')
-    // container_chat.classList.toggle('cerrar_whastapp')
+    disparador++
+    console.log(disparador);
+    disparador === 2 ? cerrar_ventana(): condicion_cerrar();;
 })
 
 const condicion_cerrar = ()=>{
-    container_chat.classList.toggle('abrir_whastapp')
-    if(container_chat.classList.contains('abrir_whastapp')){
+    if(container_chat.classList.toggle('abrir_whastapp')){
         setTimeout(() => {
-            container_chat.classList.add('d-aparecer');
+            container_chat.classList.toggle('d-aparecer');
         }, 200)
-    }else{
-        container_chat.classList.remove('d-aparecer');
-        
     }
+}
+
+const cerrar_ventana = ()=>{
+    disparador =0;
+    container_chat.classList.toggle('d-aparecer');
+    setTimeout(()=>{container_chat.classList.toggle('abrir_whastapp')},350)
 }
